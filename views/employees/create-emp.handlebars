@@ -1,0 +1,131 @@
+<br>
+<section class="container bg-white">
+     <article>
+         <main class="employeeBlock">
+             <h3 class="h3 uppercase text-primary font-weight-bold text-center">Create Employee</h3>
+             <form action="/employee/create-emp" method="post" enctype="multipart/form-data">
+                 <div class="row">
+                     <div class="col-3 form-group font-weight-bold">
+                         <label for="emp_name">Emp name</label>
+                         <input type="text" 
+                         class="form-control"
+                         name="emp_name"
+                         id="emp_name"
+                         placeholder="Enter employee name"
+                         required>
+                     </div>
+                     <div class="col-3 form-group font-weight-bold">
+                         <label for="emp_id"> Emp id </label>
+                         <input type="text" 
+                         class="form-control"
+                         name="emp_id"
+                         id="emp_id"
+                         placeholder="Enter employee id"
+                         required>
+                    </div>
+                     <div class="col-3 form-group font-weight-bold">
+                         <label for="emp_salary">Emp Salary</label>
+                         <input type="text" 
+                         class="form-control"
+                         name="emp_salary"
+                         id="emp_salary"
+                        placeholder="Enter employee Salary"
+                        required>
+                     </div>
+                     <div class="col-3 form-group font-weight-bold">
+                         <label for="emp_edu">Emp Education</label>
+                         <select name="emp_edu" id="emp_edu" class="form-control">
+                         <option value="be">BE</option>
+                         <option value="btech">BTECH</option>
+                         <option value="bca">BCA</option>
+                         <option value="mca">MCA</option>
+                         <option value="msc">MSC</option>
+                         </select>
+                     </div>
+                     <div class="col-3 form-group">
+                         <label for="emp_gender" class="font-weight-bold">Emp Gender</label> <br>
+                         <input type="radio" 
+                         class="form-check-input1"
+                         name="emp_gender"
+                         id="emp_gender"
+                         value="male"> Male
+                         <input type="radio" 
+                         class="form-check-input1"
+                         name="emp_gender"
+                         id="emp_gender"
+                         value="female"> Female
+                         <input type="radio" 
+                         class="form-check-input1"
+                         name="emp_gender"
+                         id="emp_gender"
+                         value="others"> Others
+                     </div>
+                     <div class="col-3 form-group font-weight-bold">
+                         <label for="emp_exp">Emp Experience</label>
+                         <input type="text" 
+                         class="form-control"
+                         id="emp_exp"
+                         name="emp_exp"
+                         placeholder="Enter Experience"
+                         required>
+                     </div>
+                     <div class="col-3 form-group font-weight-bold">
+                         <label for="emp_des">Emp Designation</label>
+                         <input type="text" 
+                         class="form-control"
+                         id="emp_des"
+                         name="emp_des"
+                         placeholder="Enter Designation"
+                         required>
+                     </div>
+                     <div class="col-3 form-group font-weight-bold">
+                         <label for="emp_location">Emp Loaction</label>
+                         <input type="text" 
+                         class="form-control"
+                         id="emp_location"
+                         name="emp_location"
+                         placeholder="Enter Loaction"
+                         required>
+                     </div>
+                     <div class="col-3 form-group font-weight-bold">
+                         <label for="emp_email">Emp Email</label>
+                         <input type="text" 
+                         class="form-control"
+                         id="emp_email"
+                         name="emp_email"
+                         placeholder="Enter Email"
+                         required>
+                     </div>
+                     <div class="col-3 form-group font-weight-bold">
+                         <label for="emp_phone">Emp Phone Numer</label>
+                         <input type="text" 
+                         class="form-control"
+                         id="emp_phone"
+                         name="emp_phone"
+                         placeholder="Enter Phone Numer"
+                         required>
+                     </div>
+                     <div class="col-3 form-group font-weight-bold">
+                         <label for="emp_photo">Emp Photo</label>
+                         <input type="file" 
+                         class="form-control"
+                         id="emp_photo"
+                         name="emp_photo"
+                         required>
+                     </div>
+                     <div class="col-3 form-group">
+                         <label for="emp_skills" class="font-weight-bold">Emp skills</label>
+                         <div>
+                             <input type="checkbox" name="emp_skills" value="Javascript" checked> Javascript
+                             <input type="checkbox" name="emp_skills" value="React"> React
+                             <input type="checkbox" name="emp_skills" value="NodeJs"> NodeJs
+                         </div>
+                     </div>
+                     <div>
+                     </div>
+                 </div>
+                 <center><button type="submit" class="btn btn-primary btn-lg font-weight-bold">SUBMIT</button></center>
+             </form>
+         </main>
+     </article>
+</section>

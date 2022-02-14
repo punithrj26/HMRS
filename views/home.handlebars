@@ -1,0 +1,93 @@
+{{!-- <section class="container-fluid my-4">
+  <article>
+    <table
+      class="table table-bordered text-uppercase text-center table-primary table-responsive"
+    >
+      <h4 class="text-primary font-weight-bolder text-center">Employee Details</h4>
+      <thead class="table-dark">
+        <tr>
+          <th>photo</th>
+          <th>id</th>
+          <th>name</th>
+          <th>salary</th>
+          <th>designation</th>
+          <th>Experience</th>
+          <th>Education</th>
+          <th>Email</th>
+          <th>Skills</th>
+          <th>Phone number</th>
+          <th>Gender</th>
+          <th>Location</th>
+          <th>View Profile</th>
+          <th>Edit Profile</th>
+          <th>Delete Profile</th>
+        </tr>
+      </thead>
+      <body class="bg-white">
+        {{#each payload}}
+          <tr>
+            <td>
+              <img
+                class="img-thumbnail"
+                src="{{trimString emp_photo.0.path}}"
+                alt="{{emp_name}}"
+              />
+            </td>
+            <td>{{emp_id}}</td>
+            <td>{{emp_name}}</td>
+            <td>{{emp_salary}}</td>
+            <td>{{emp_des}}</td>
+            <td>{{emp_exp}}</td>
+            <td>{{emp_edu}}</td>
+            <td>{{emp_email}}</td>
+            <td>{{emp_skills}}</td>
+            <td>{{emp_phone}}</td>
+            <td>{{emp_gender}}</td>
+            <td>{{emp_location}}</td>
+            <td><a
+                href="/employee/{{_id}}"
+                class="btn btn-sm btn-primary btn-block"
+              >Click here</a></td>
+            <td><a
+                href="/employee/edit-emp/{{_id}}"
+                class="btn btn-sm btn-info btn-block"
+              >Click here</a></td>
+            <td>
+              <form
+                class="float-right text-danger"
+                method="post"
+                action="/employee/delete-emp/{{_id}}?_method=DELETE">
+                <input type="hidden" name="_method" value="DELETE" />
+                <button class="btn btn-danger">delete</button>
+              </form>
+            </td>
+          </tr>
+        {{/each}}
+      </body>
+    </table>
+  </article>
+</section> --}}
+
+
+
+<section class="container my-2">
+  <article>
+    <div class="card-columns">
+      {{#each payload}}
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="{{trimString emp_photo.0.path}}"
+            alt="Card image cap" style="height: 350px;"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-capitalize">{{emp_name}}</h5>
+            <p class="card-text">{{emp_email}}</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                ago</small></p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </article>
+</section>
